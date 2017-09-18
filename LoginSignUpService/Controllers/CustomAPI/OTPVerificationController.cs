@@ -37,7 +37,7 @@ namespace LoginSignUpService.Controllers.CustomAPI
                 return BadRequest("Please recharge your SMS Balance.\nCall @7987421819");
 
             var OTP = GenerateOTP();
-            var SMSContent = GenerateSMSContent(OTPVerificationDTO, user, OTP);
+            var SMSContent = String.Format(OTPVerificationDTO.SMSContent, OTP);
 
             //TODO: CALL SMS API(mobile number, SMSContent)
 
@@ -53,21 +53,11 @@ namespace LoginSignUpService.Controllers.CustomAPI
             db.Entry(user).State = EntityState.Modified;
         }
 
-        private string GenerateSMSContent(OTPVerificationDTO dto, User user, string OTP)
-        {
-            string SMSContent = "";
-            if (dto.IsCredit == true)
-                SMSContent = String.Format(Constants.CreditTransactionSMSFormat, dto.TransactionAmount, user.BusinessName, OTP);
-            else if (dto.IsCredit == false)
-                SMSContent = String.Format(Constants.DebitTransactionSMSFormat, dto.TransactionAmount, user.BusinessName, OTP);
-            return SMSContent;
-        }
-
         private string GenerateOTP()
         {
             var random = new Random();
             string OTP = "";
-            for (int i = 0; i < Constants.OTPLength; i++)
+            for (int i = 0; i < OTPVerificationConstants.OTPLength; i++)
                 OTP = String.Concat(OTP, random.Next(10).ToString());
             return OTP;
         }

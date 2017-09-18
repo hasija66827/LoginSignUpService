@@ -16,11 +16,7 @@ namespace LoginSignUpService.DTO
         public string ReceiverMobileNo { get; set; }
 
         [Required]
-        [Range(0, 98765432198765)]
-        public decimal? TransactionAmount { get; set; }
-
-        [Required]
-        public bool? IsCredit { get; set; }
-
+        [StringLength(200)]
+        public string SMSContent { get; set; }
     }
 }
