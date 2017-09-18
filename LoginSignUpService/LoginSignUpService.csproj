@@ -172,10 +172,13 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Controllers\CustomAPI\OTPVerificationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DTO\AuthenticateUserDTO.cs" />
     <Compile Include="DTO\BusinessInformationDTO.cs" />
+    <Compile Include="DTO\OTPVerificationDTO.cs" />
     <Compile Include="DTO\PersonalInformationDTO.cs" />
     <Compile Include="DTO\CreateUserDTO.cs" />
     <Compile Include="Global.asax.cs">
