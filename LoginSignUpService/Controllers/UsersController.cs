@@ -60,14 +60,12 @@ namespace LoginSignUpService.Controllers
                         authenitcationFactor = EAuthenticationFactor.TwoFactorAuthenticated;
                 }
             }
-            var result = new List<AuthenticationToken>();
             var authenticationToken = new AuthenticationToken()
             {
                 AuthenticationFactor = authenitcationFactor,
                 User = user
             };
-            result.Add(authenticationToken);
-            return Ok(result);
+            return Ok(authenticationToken);
         }
 
         // POST: api/Users
