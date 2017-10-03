@@ -188,6 +188,10 @@
     <Compile Include="Migrations\201709170716514_Initial.Designer.cs">
       <DependentUpon>201709170716514_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710031543033_adding passcode attribute.cs" />
+    <Compile Include="Migrations\201710031543033_adding passcode attribute.Designer.cs">
+      <DependentUpon>201710031543033_adding passcode attribute.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LoginSignUpServiceContext.cs" />
     <Compile Include="Models\User.cs" />
@@ -226,6 +230,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Properties\PublishProfiles\LoginSignUpServiceAPP - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -268,6 +273,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709170716514_Initial.resx">
       <DependentUpon>201709170716514_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710031543033_adding passcode attribute.resx">
+      <DependentUpon>201710031543033_adding passcode attribute.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

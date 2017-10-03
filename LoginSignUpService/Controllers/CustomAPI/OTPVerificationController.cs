@@ -26,7 +26,7 @@ namespace LoginSignUpService.Controllers.CustomAPI
             if (OTPVerificationDTO == null)
                 throw new Exception("OTP Verification should not have been null");
 
-            if (OTPVerificationDTO.UserID == Guid.Empty)
+            if (OTPVerificationDTO.UserID != Guid.Empty)
                 return Ok("123456");
 
             var user = await db.Users.FindAsync(OTPVerificationDTO.UserID);
