@@ -84,7 +84,7 @@ namespace LoginSignUpService.Controllers
             var user = new User()
             {
                 UserId = Guid.NewGuid(),
-                NumberOfSMS = 400,
+                NumberOfSMS = 50,
                 AddressLine = userDTO.BI.AddressLine,
                 BusinessName = userDTO.BI.BusinessName,
                 BusinessType = userDTO.BI.BusinessType,
@@ -97,6 +97,7 @@ namespace LoginSignUpService.Controllers
                 Latitude = userDTO.BI.Cordinates.Latitude,
                 Longitude = userDTO.BI.Cordinates.Longitude,
                 MobileNo = userDTO.PI.MobileNo,
+                Passcode = userDTO.PI.Passcode,
                 Password = userDTO.PI.Password,
                 PinCode = userDTO.BI.PinCode,
                 State = userDTO.BI.State,
