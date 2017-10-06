@@ -11,12 +11,12 @@ namespace LoginSignUpService.DTO
         [Required]
         public Guid? UserID { get; set; }
 
-        [Required]
-        [StringLength(10, MinimumLength = 10)]
+        [Required(ErrorMessage = "You can't leave this empty.", AllowEmptyStrings = false)]
+        [RegularExpression(@"[987]\d{9}", ErrorMessage = "{0} is Invalid.")]
         public string ReceiverMobileNo { get; set; }
 
         [Required]
-        [StringLength(200)]
+        [StringLength(140)]
         public string SMSContent { get; set; }
     }
 }
