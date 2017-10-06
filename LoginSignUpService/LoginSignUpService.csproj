@@ -181,6 +181,7 @@
     <Compile Include="DTO\OTPVerificationDTO.cs" />
     <Compile Include="DTO\PersonalInformationDTO.cs" />
     <Compile Include="DTO\CreateUserDTO.cs" />
+    <Compile Include="DTO\UpdateUserDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

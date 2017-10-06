@@ -124,6 +124,26 @@ namespace LoginSignUpService.Controllers
             return Ok(authenticationToken);
         }
 
+        [HttpPut]
+        [ResponseType(typeof(User))]
+        public async Task<IHttpActionResult> Put(Guid id, UpdateUserDTO updateUserDTO)
+        {
+            if (updateUserDTO == null)
+                throw new Exception("updateUserDTO should not have been null");
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var user = await db.Users.FindAsync(id);
+
+            if (user == null)
+                throw new Exception(String.Format("User with id {0} not found", id));
+
+            user.Passcode = updateUserDTO.Passcode;
+            db.Entry(user).State = EntityState.Modified;
+            await db.SaveChangesAsync();
+            return Ok(user);
+        }
 
         protected override void Dispose(bool disposing)
         {
