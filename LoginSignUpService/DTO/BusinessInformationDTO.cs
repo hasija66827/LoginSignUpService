@@ -36,6 +36,7 @@ namespace LoginSignUpService.DTO
 
         public Cordinates Cordinates { get; set; }
     }
+
     public class Cordinates
     {
         public string Latitude { get; set; }

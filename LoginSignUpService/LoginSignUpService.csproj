@@ -194,6 +194,14 @@
     <Compile Include="Migrations\201710031543033_adding passcode attribute.Designer.cs">
       <DependentUpon>201710031543033_adding passcode attribute.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710081559219_Update-database.cs" />
+    <Compile Include="Migrations\201710081559219_Update-database.Designer.cs">
+      <DependentUpon>201710081559219_Update-database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710121413384_AddingIsRegisterdUserFlag.cs" />
+    <Compile Include="Migrations\201710121413384_AddingIsRegisterdUserFlag.Designer.cs">
+      <DependentUpon>201710121413384_AddingIsRegisterdUserFlag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LoginSignUpServiceContext.cs" />
     <Compile Include="Models\User.cs" />
@@ -278,6 +286,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710031543033_adding passcode attribute.resx">
       <DependentUpon>201710031543033_adding passcode attribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710081559219_Update-database.resx">
+      <DependentUpon>201710081559219_Update-database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710121413384_AddingIsRegisterdUserFlag.resx">
+      <DependentUpon>201710121413384_AddingIsRegisterdUserFlag.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

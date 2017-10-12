@@ -93,6 +93,7 @@ namespace LoginSignUpService.Controllers
                 EmailId = userDTO.PI.EmailId,
                 FirstName = userDTO.PI.FirstName,
                 GSTIN = userDTO.BI.GSTIN,
+                IsRegisteredUser = false,
                 LastName = userDTO.PI.LastName,
                 Latitude = userDTO.BI.Cordinates.Latitude,
                 Longitude = userDTO.BI.Cordinates.Longitude,

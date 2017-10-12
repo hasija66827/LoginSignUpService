@@ -33,6 +33,10 @@ namespace LoginSignUpService.Models
 
         [Required]
         public string Passcode { get; set; }
+
+        [Required]
+        public bool IsRegisteredUser { get; set; }
+
         #endregion
 
         #region BusinessInformation
@@ -58,10 +62,8 @@ namespace LoginSignUpService.Models
         [Required]
         public string State { get; set; }
 
-        [Required]
         public string Latitude { get; set; }
 
-        [Required]
         public string Longitude { get; set; }
         #endregion
 
