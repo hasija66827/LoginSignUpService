@@ -17,7 +17,6 @@ namespace LoginSignUpService.DTO
         [RegularExpression(@"[a-zA-Z]{1,9}", ErrorMessage = "Last name is Invalid")]
         public string LastName { get; set; }
 
-        [EmailAddress(ErrorMessage = "Email Id is Invalid")]
         public string EmailId { get; set; }
 
         public DateTime DateOfBirth { get; set; }

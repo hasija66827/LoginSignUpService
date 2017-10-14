@@ -18,7 +18,6 @@ namespace LoginSignUpService.Models
         [Required]
         public string LastName { get; set; }
 
-        [Required]
         public string EmailId { get; set; }
 
         public DateTime DateOfBirth { get; set; }

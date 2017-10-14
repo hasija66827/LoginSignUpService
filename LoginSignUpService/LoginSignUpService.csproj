@@ -202,6 +202,10 @@
     <Compile Include="Migrations\201710121413384_AddingIsRegisterdUserFlag.Designer.cs">
       <DependentUpon>201710121413384_AddingIsRegisterdUserFlag.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710140635191_updatingemailAttributeNotRequired.cs" />
+    <Compile Include="Migrations\201710140635191_updatingemailAttributeNotRequired.Designer.cs">
+      <DependentUpon>201710140635191_updatingemailAttributeNotRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LoginSignUpServiceContext.cs" />
     <Compile Include="Models\User.cs" />
@@ -292,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710121413384_AddingIsRegisterdUserFlag.resx">
       <DependentUpon>201710121413384_AddingIsRegisterdUserFlag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710140635191_updatingemailAttributeNotRequired.resx">
+      <DependentUpon>201710140635191_updatingemailAttributeNotRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
