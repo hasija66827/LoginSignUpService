@@ -244,14 +244,24 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Properties\PublishProfiles\54894Login.pubxml" />
+    <None Include="Properties\PublishProfiles\AuthService.pubxml" />
+    <None Include="Properties\PublishProfiles\logan.pubxml" />
+    <None Include="Properties\PublishProfiles\LoginSignUpService20180128103239 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\LoginSignUpService20180129010341 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\LoginSignUpService20180129010745 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\LoginSignUpService20180130030356 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\LoginSignUpServiceAPP - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\XYZ.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -319,9 +329,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52109</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44381/</IISUrl>
+          <IISUrl>https://localhost:44380/</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>https://localhost:44381/</IISAppRootUrl>
+          <IISAppRootUrl>https://localhost:44380/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

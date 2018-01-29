@@ -119,7 +119,7 @@ namespace LoginSignUpService.Controllers
 
             var authenticationToken = new AuthenticationToken()
             {
-                AuthenticationFactor = EAuthenticationFactor.TwoFactorAuthenticated, //Assuming we have verified the OTP Client Side
+                AuthenticationFactor = EAuthenticationFactor.NotAuthenticated,
                 User = user
             };
             return Ok(authenticationToken);
