@@ -31,13 +31,6 @@ namespace LoginSignUpService.Controllers
     {
         private LoginSignUpServiceContext db = new LoginSignUpServiceContext();
 
-        // GET: api/Users
-        [HttpGet]
-        public IQueryable<User> Get()
-        {
-            return db.Users;
-        }
-
         [HttpGet]
         [ResponseType(typeof(AuthenticationToken))]
         public IHttpActionResult AuthenticateUser(AuthenticateUserDTO authenticateUserDTO)
